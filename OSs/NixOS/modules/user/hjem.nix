@@ -27,6 +27,7 @@ in {
       blender
       audacity
       obs-studio
+      godot-mono
 
       nwg-look
       walker
