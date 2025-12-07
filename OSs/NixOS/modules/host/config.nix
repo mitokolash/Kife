@@ -40,6 +40,8 @@ in {
     enable = true;
   };
 
+  programs.steam.enable = true;
+
   fonts.packages = [ pkgs.nerd-fonts.jetbrains-mono ];
 
   users.users.lousp = {

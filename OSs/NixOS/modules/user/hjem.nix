@@ -24,10 +24,8 @@ in {
       vesktop
       spotify
 
-      blender
       audacity
       obs-studio
-      godot-mono
 
       nwg-look
       walker
