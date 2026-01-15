@@ -1,0 +1,12 @@
+theme = "ayu_mirage"
+
+[editor]
+line-number = "relative"
+continue-comments = false
+color-modes = true
+completion-trigger-len = 1
+auto-format = true
+shell = [ "nu", "-c" ]
+
+[editor.lsp]
+enable = true

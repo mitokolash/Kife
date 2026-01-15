@@ -23,8 +23,6 @@ $env.config = {
 $env.BAT_THEME = "base16"
 $env.FZF_DEFAULT_OPTS = "--reverse --border=rounded --style=minimal --height=40 --preview 'bat --color always --style numbers,changes --line-range :500 {}' --color=16"
 
-fastfetch
-
 def --env yy [...args] {
   let tmp = (mktemp -t "yazi-cwd.XXXXX")
   yazi ...$args --cwd-file $tmp
@@ -45,30 +43,18 @@ alias bonsai = cbonsai -lip
 alias cat = bat
 alias cd = z
 # alias hx = helix
-alias hzf = hx (fzf)
-alias zj = zellij
-alias zf = z (fzf --walker=dir,follow,hidden --preview=)
-
-alias gb = git branch
-alias gc = git commit -m 
-alias gck = git checkout
-alias gd = git add
-alias gm = git merge
-alias gp = git push
-alias gs = git status
 
 alias l =  eza --tree --icons --git
 alias ls = eza --icons --git
-alias matrix = cmatrix -C blue -m
 alias recorder = wf-recorder
 
 alias dockerdev = docker run -it -v (pwd):/home/dev/workspace -v ~/Kife/dotfiles:/home/dev/.config --name
-alias mine = steam-run java -jar ~/Downloads/SKlauncher-3.2.12.jar
+alias mine = java -jar ~/Downloads/SKlauncher.jar
 
 # alias nhs = nh home switch
 # alias nos = nh os switch
 # alias nosu = nh os switch -u
-alias kife = nh os
+# alias kife = nh os
 
 # alias u = ame upgrade
 # alias r = ame remove
