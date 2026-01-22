@@ -12,14 +12,17 @@ ShellRoot {
         visible: true
         anchors.top: true
         margins.top: 10
-        property int borderRadius: 20
+        borderRadius: 40
     }
 
     Popups.Popup {
         id: controlCenter
 
-        property int popupWidth: 360
-        property int popupHeight: 480
+        popupWidth: 360
+        popupHeight: 480
+
+        Behavior on implicitHeight { NumberAnimation { duration: 800; easing.type: Easing.InOutCubic } }
+        Behavior on implicitWidth { NumberAnimation { duration: 800; easing.type: Easing.InOutCubic } }
 
         anchor.window: bar
         anchor.rect.x: bar.width / 2 - width / 2
@@ -39,8 +42,11 @@ ShellRoot {
     Popups.Popup {
         id: applauncher
 
-        property int popupWidth: 480
-        property int popupHeight: 360
+        popupWidth: 480
+        popupHeight: 360
+
+        Behavior on implicitHeight { NumberAnimation { duration: 800; easing.type: Easing.InOutCubic } }
+        Behavior on implicitWidth { NumberAnimation { duration: 800; easing.type: Easing.InOutCubic } }
 
         anchor.window: bar
         anchor.rect.x: 1920 / 2 - width / 2

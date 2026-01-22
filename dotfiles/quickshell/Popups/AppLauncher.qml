@@ -58,6 +58,7 @@ Rectangle {
                     event.accepted = true;
                 } else if (event.key === Qt.Key_Escape) {
                     applauncher.open = false
+                    searchInput.text = ""
                 }
             }
         }
@@ -84,6 +85,7 @@ Rectangle {
                 function launch() {
                     modelData.execute();
                     applauncher.open = false;
+                    searchInput.text = "";
                 }
 
                 Rectangle {
@@ -123,6 +125,7 @@ Rectangle {
                             onClicked: {
                                 modelData.execute()
                                 applauncher.open = false
+                                searchInput.text = ""
                             }
                         }
                     }

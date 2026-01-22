@@ -48,7 +48,6 @@ alias l =  eza --tree --icons --git
 alias ls = eza --icons --git
 alias recorder = wf-recorder
 
-alias dockerdev = docker run -it -v (pwd):/home/dev/workspace -v ~/Kife/dotfiles:/home/dev/.config --name
 alias mine = java -jar ~/Downloads/SKlauncher.jar
 
 # alias nhs = nh home switch

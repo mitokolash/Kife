@@ -3,6 +3,8 @@ import QtQuick
 import Quickshell.Wayland
 
 PanelWindow {
+    property int borderRadius
+
     color: "transparent"
     visible: false
     height: 45
@@ -30,6 +32,6 @@ PanelWindow {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
 
-        Top {}
+        Bar {}
     }
 }

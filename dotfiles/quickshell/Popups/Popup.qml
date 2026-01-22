@@ -3,11 +3,10 @@ import QtQuick
 
 PopupWindow {
     visible: false
-    
-    property bool open: false
 
-    Behavior on implicitHeight { NumberAnimation { duration: 500; easing.type: Easing.InOutCubic } }
-    Behavior on implicitWidth { NumberAnimation { duration: 500; easing.type: Easing.InOutCubic } }
+    property bool open: false
+    property int popupHeight
+    property int popupWidth
 
     onOpenChanged: {
         if (open) {

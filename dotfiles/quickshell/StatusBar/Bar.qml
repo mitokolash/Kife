@@ -15,7 +15,7 @@ Row {
     Rectangle {
         width: 120; height: 35
         color: mouseArea.containsMouse ? "#333333" : "transparent"
-        radius: 20
+        radius: 40
 
         Behavior on color { ColorAnimation { duration: 150 } }
 
