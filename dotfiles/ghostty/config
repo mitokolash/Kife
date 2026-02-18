@@ -1,8 +1,8 @@
 theme = Ayu Mirage
-font-family = JetBrains Mono
+font-family = JetBrains Mono Nerd Font
 
 window-padding-x = 12
 window-padding-y = 15
 
 window-inherit-working-directory = false
-window-decoration = none
+# window-decoration = none

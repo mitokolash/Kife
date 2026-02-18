@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <core>
+  <focus>
+    <followMouse>no</followMouse>
+    <raiseOnFocus>yes</raiseOnFocus>
+  </focus>
+  </core>
+
+  <theme>
+    <name>Arc-Clone</name>
+    <font name="Sans" size="10" />
+  </theme>
+
+  <desktops number="6" />
+
+  <keyboard>
+    <default />
+    <keybind key="A-Tab" />
+
+    
+    <keybind key="W-Return"> <action name="Execute" command="ghostty" /> </keybind>
+    <keybind key="W-z"> <action name="Execute" command="flatpak run app.zen_browser.zen"/> </keybind>
+    <keybind key="W-d"> <action name="Execute" command="flatpak run com.discordapp.Discord"/> </keybind>
+    <keybind key="W-m"> <action name="Execute" command="sklauncher"/> </keybind>
+
+    <keybind key="W-1"> <action name="GoToDesktop" to="1" /> </keybind>
+    <keybind key="W-2"> <action name="GoToDesktop" to="2" /> </keybind>
+    <keybind key="W-3"> <action name="GoToDesktop" to="3" /> </keybind>
+    <keybind key="W-4"> <action name="GoToDesktop" to="4" /> </keybind>
+    <keybind key="W-5"> <action name="GoToDesktop" to="5" /> </keybind>
+    <keybind key="W-6"> <action name="GoToDesktop" to="6" /> </keybind>
+
+    <keybind key="W-S-1"> <action name="SendToDesktop" to="1" /> </keybind>
+    <keybind key="W-S-2"> <action name="SendToDesktop" to="2" /> </keybind>
+    <keybind key="W-S-3"> <action name="SendToDesktop" to="3" /> </keybind>
+    <keybind key="W-S-4"> <action name="SendToDesktop" to="4" /> </keybind>
+    <keybind key="W-S-5"> <action name="SendToDesktop" to="5" /> </keybind>
+    <keybind key="W-S-6"> <action name="SendToDesktop" to="6" /> </keybind>
+  </keyboard>
+</labwc_config>

@@ -1,0 +1,12 @@
+# Keyboard
+XKB_DEFAULT_LAYOUT=br,ru
+XKB_DEFAULT_VARIANT=abnt2,phonetic
+XKB_DEFAULT_OPTIONS=grp:caps_toggle,grp_led:caps
+
+# Theme
+GTK_THEME=Adwaita:dark
+QT_QPA_PLATFORMTHEME=qt5ct
+
+# Dark Mode
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'

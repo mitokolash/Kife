@@ -10,9 +10,9 @@ ShellRoot {
     StatusBar.Panel {
         id: bar
         visible: true
-        anchors.top: true
-        margins.top: 10
-        borderRadius: 40
+        anchors.bottom: true
+        margins.left: 0
+        margins.right: 0
     }
 
     Popups.Popup {
@@ -35,30 +35,6 @@ ShellRoot {
 
             function toggle() {
                 controlCenter.open = !controlCenter.open
-            }
-        }
-    }
-
-    Popups.Popup {
-        id: applauncher
-
-        popupWidth: 480
-        popupHeight: 360
-
-        Behavior on implicitHeight { NumberAnimation { duration: 800; easing.type: Easing.InOutCubic } }
-        Behavior on implicitWidth { NumberAnimation { duration: 800; easing.type: Easing.InOutCubic } }
-
-        anchor.window: bar
-        anchor.rect.x: 1920 / 2 - width / 2
-        anchor.rect.y: 1080 / 2 - height / 2
-
-        Popups.AppLauncher {}
-
-        IpcHandler {
-            target: "applauncher"
-
-            function toggle() {
-                applauncher.open = !applauncher.open
             }
         }
     }

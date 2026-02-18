@@ -8,8 +8,9 @@ Row {
 
     anchors.margins: 16
 
-    Items.Workspaces {
-        anchors.left: parent.left
+    Items.Apps {
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 
     Rectangle {
@@ -19,7 +20,7 @@ Row {
 
         Behavior on color { ColorAnimation { duration: 150 } }
 
-        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
 
         MouseArea {
