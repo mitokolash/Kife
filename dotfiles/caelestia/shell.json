@@ -121,7 +121,7 @@
     }
   },
   "bar": {
-    "persistent": false,
+    "persistent": true,
     "showOnHover": true,
     "dragThreshold": 20,
     "scrollActions": {
@@ -151,7 +151,7 @@
     "tray": {
       "background": true,
       "recolour": true,
-      "compact": false,
+      "compact": true,
       "iconSubs": []
     },
     "status": {
@@ -511,8 +511,8 @@
       "audioInputChanged": true,
       "capsLockChanged": true,
       "numLockChanged": true,
-      "kbLayoutChanged": true,
-      "vpnChanged": true,
+      "kbLayoutChanged": false,
+      "vpnChanged": false,
       "nowPlaying": true
     },
     "vpn": {
