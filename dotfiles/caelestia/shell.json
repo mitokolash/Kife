@@ -27,7 +27,7 @@
     },
     "transparency": {
       "enabled": true,
-      "base": 0.85,
+      "base": 0.8029169709933223,
       "layers": 0.4
     }
   },
@@ -97,7 +97,7 @@
   "background": {
     "enabled": true,
     "desktopClock": {
-      "enabled": true,
+      "enabled": false,
       "scale": 1,
       "position": "top-right",
       "invertColors": false,
@@ -116,8 +116,8 @@
       "enabled": false,
       "autoHide": true,
       "blur": false,
-      "rounding": 1,
-      "spacing": 1.0004890964106845
+      "rounding": 10,
+      "spacing": 0
     }
   },
   "bar": {
